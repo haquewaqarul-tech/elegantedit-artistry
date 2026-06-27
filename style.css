@@ -42,7 +42,13 @@ color:#c8a96a;
 }
 
 .hero{
-height:90vh;
+min-height:70vh;
+padding:120px 10%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 display:flex;
 justify-content:center;
 align-items:center;
@@ -55,7 +61,18 @@ font-size:60px;
 margin-bottom:20px;
 }
 
-.hero p{
+.hero{
+    min-height:70vh;
+    padding:120px 10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
 font-size:20px;
 margin-bottom:30px;
 }
@@ -111,7 +128,17 @@ text-align:center;
 background:white;
 }
 
-.features{
+.feature{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-10px);
+}
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
